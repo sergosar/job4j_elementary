@@ -15,5 +15,4 @@ public class Fit {
         double man = Fit.manWeight(height);
         System.out.println("Man 187 is " + man);
     }
-
 }
