@@ -44,7 +44,7 @@ class PointTest {
     @Test
     void when000To345then7dot0710() {
         double expected = 7.0710;
-        Point point1 = new Point(0, -0, 0);
+        Point point1 = new Point(0, 0, 0);
         Point point2 = new Point(3, 4, 5);
         double output = point1.distance3d(point2);
         assertThat(output).isEqualTo(expected, withPrecision(0.0001));
