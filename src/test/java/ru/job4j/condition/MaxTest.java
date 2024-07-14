@@ -39,4 +39,23 @@ class MaxTest {
         int expected = 8;
         assertThat(result).isEqualTo(expected);
     }
+    @Test
+    void whenMax1And2And3Then3() {
+        int left = 1;
+        int right = 2;
+        int top = 3;
+        int result = Max.max(left, right, top);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
+    @Test
+    void whenMax1And2And3AndMinus50Then3() {
+        int left = 1;
+        int right = 2;
+        int top = 3;
+        int bottom = -50;
+        int result = Max.max(left, right, top, bottom);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
